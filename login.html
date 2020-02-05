@@ -1,0 +1,51 @@
+<html>
+<head>
+<title> Login Page </title>
+<style>
+  body{
+    padding:20px;
+  background-image: url('https://s.marketwatch.com/public/resources/images/MW-HE536_airpla_ZH_20190225131547.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: Bradley Hand ITC;
+  font-size: 30px;
+
+}
+</style>
+</head>
+<body>
+  <form action="index.html">
+  <center>
+  <u><h1>LOGIN</h1></u>
+  <b>Username:<b>
+  <input type= "text" name="username" minlength="8" maxlength="15"  title="Must have one uppercase and lowercase letter, and at least 8 characters" placeholder="User&nbsp;ID" required>
+  <br>
+  <br>
+  <b>Password:<b>
+  <input type= "password" placeholder="Password"  id="myInput" pattern ="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  required>
+  <br><br>
+  <input type="checkbox" onclick="myFunction()">Show Password
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+  <br><br>
+  <br>
+  <br><br><br>
+  <button>Submit</button>
+  <br>
+  <br>
+  <a href="#">Forget Password???</a><br> <br>
+  A new user??&nbsp;<a href="reg.html">Create one!!</a>
+    </center>
+  </form>
+</body>
+</html>
